@@ -1,0 +1,134 @@
+@import url('reset.css');
+
+body {
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    width: 380px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    margin-top: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    background-color: #ffffff;
+    padding: 1em;
+    flex-direction: column;
+    transition: ease-out 0.6s;
+}
+
+form {
+    width: 100%;
+}
+
+#weather-container {
+    margin-bottom: 1em;
+}
+
+#weather-container,
+#location-not-found {
+    margin-top: 1em;
+}
+
+#wd-cont,
+#fl-cont,
+#hm-cont {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: ease 0.6s;
+}
+
+#tp-info {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperature {
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.not-found,
+.fa-triangle-exclamation {
+    font-size: 2.5rem;
+}
+
+.celsius {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 5px;
+}
+
+.weather-description {
+    text-transform: capitalize;
+}
+
+#location-not-found {
+    text-align: center;
+    margin-bottom: 1em;
+    transition: ease 0.6s;
+}
+
+.fa-location-dot {
+    font-size: 1.25rem;
+    color: #2e2e2e;
+    padding: .35em;
+}
+
+p {
+    font-weight: 700;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 0.5em 0.75em 0.5em 0.5em;
+    font-family: inherit;
+    font-size: 1.25rem;
+}
+
+::placeholder {
+    opacity: 0.75;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #5e5e5e;
+    font-size: 1.25rem;
+    border-radius: 25px;
+    padding: .35em;
+    transition: ease 0.4s;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #5e5e5e;
+    transition: ease 0.4s;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
